@@ -117,6 +117,7 @@ INSTALLED_APPS = (
     'taggit',
     'djcelery',
     'kombu.transport.django',
+    'react',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -165,3 +166,9 @@ djcelery.setup_loader()
 # For progress demo purposes, do we want to take several seconds between each
 # task for the export?
 TODO_EXPORT_VERY_SLOWLY = True
+
+# React/Webpack Config
+
+REACT = {
+    'DEVTOOL': 'eval' if DEBUG else None,
+}

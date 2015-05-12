@@ -1,3 +1,4 @@
 tododjango.db
 /static/
 *.pyc
+node_modules/
